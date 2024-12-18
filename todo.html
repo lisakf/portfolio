@@ -6,50 +6,54 @@
     <title>To-Do List</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #007bff, #0056b3);
+            color: #fff;
             margin: 0;
-            padding: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
         }
 
-        h1 {
-            margin-bottom: 20px;
-        }
-
         .todo-container {
             background: #fff;
+            color: #333;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .todo-input {
             width: calc(100% - 40px);
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
+            font-size: 1rem;
         }
 
         .add-btn {
-            padding: 10px 20px;
+            width: 100%;
+            padding: 10px;
             margin-top: 10px;
-            background-color: #007bff;
-            color: white;
+            background: #007bff;
+            color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
+            font-size: 1rem;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
 
         .add-btn:hover {
-            background-color: #0056b3;
+            background: #0056b3;
         }
 
         ul {
@@ -61,33 +65,50 @@
         li {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
             margin-bottom: 10px;
+            background: #f9f9f9;
         }
 
         .delete-btn {
-            background-color: #ff4d4d;
+            background: #ff4d4d;
             border: none;
-            color: white;
+            color: #fff;
             padding: 5px 10px;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
 
         .delete-btn:hover {
-            background-color: #cc0000;
+            background: #cc0000;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>To-Do List</h1>
     <div class="todo-container">
+        <h1>To-Do List</h1>
         <input type="text" class="todo-input" placeholder="Enter a new task" />
         <button class="add-btn">Add Task</button>
         <ul class="todo-list"></ul>
     </div>
+    <a href="index.html" class="back-link">Back to Portfolio</a>
 
     <script>
         const addButton = document.querySelector('.add-btn');
