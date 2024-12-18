@@ -105,11 +105,24 @@
             padding: 1.5rem;
             width: 300px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
         }
 
         .project:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-content {
+            padding: 1rem;
         }
 
         .project h3 {
@@ -169,19 +182,28 @@
         <h2>Projects</h2>
         <div class="project-list">
             <div class="project">
-                <h3>Project 1</h3>
-                <p>A short description of the project goes here.</p>
-                <a href="#" target="_blank">View Project</a>
+                <img src="https://via.placeholder.com/300x150" alt="Project 1">
+                <div class="project-content">
+                    <h3>Project 1</h3>
+                    <p>A short description of the project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>A short description of the project goes here.</p>
-                <a href="#" target="_blank">View Project</a>
+                <img src="https://via.placeholder.com/300x150" alt="Project 2">
+                <div class="project-content">
+                    <h3>Project 2</h3>
+                    <p>A short description of the project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
             </div>
             <div class="project">
-                <h3>Project 3</h3>
-                <p>A short description of the project goes here.</p>
-                <a href="#" target="_blank">View Project</a>
+                <img src="https://via.placeholder.com/300x150" alt="Project 3">
+                <div class="project-content">
+                    <h3>Project 3</h3>
+                    <p>A short description of the project goes here.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
             </div>
         </div>
     </section>
