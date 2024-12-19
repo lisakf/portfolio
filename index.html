@@ -3,221 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        h1, h2, h3 {
-            margin-bottom: 1rem;
-        }
-
-        /* Header */
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: #fff;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #f4f4f9;
-        }
-
-        /* Sections */
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        section h2 {
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            color: #444;
-        }
-
-        /* About Section */
-        #about {
-            background: #fff;
-            padding: 4rem 2rem;
-        }
-
-        #about p {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-        }
-
-        /* Projects Section */
-        #projects {
-            background-color: #f0f0f0;
-        }
-
-        .project-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .project {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            width: 300px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px 8px 0 0;
-        }
-
-        .project:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .project-content {
-            padding: 1rem;
-        }
-
-        .project h3 {
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .project p {
-            margin-bottom: 1rem;
-            color: #666;
-        }
-
-        .project a {
-            color: #007BFF;
-            font-weight: bold;
-        }
-
-        /* Contact Section */
-        #contact {
-            background: #333;
-            color: #fff;
-        }
-
-        #contact a {
-            color: #00C3FF;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
-            color: #ddd;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="todo.html">To-Do List</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate [Your Profession/Field]. Welcome to my portfolio where I showcase my favorite projects and skills. I enjoy solving problems and building creative solutions. Take a look around and let's connect!</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-            <div class="project">
-                <img src="https://via.placeholder.com/300x150" alt="To-Do List">
-                <div class="project-content">
-                    <h3>To-Do List</h3>
-                    <p>A simple and interactive to-do list app to manage tasks effectively.</p>
-                    <a href="todo.html" target="_blank">View To-Do List</a>
-                </div>
+    <section id="portfolio">
+        <h1>My Projects</h1>
+        <div class="tabs">
+            <button class="tab active" data-category="web-development">Web Development</button>
+            <button class="tab" data-category="graphic-design">Graphic Design</button>
+            <button class="tab" data-category="photography">Photography</button>
+        </div>
+        <div class="projects">
+            <div class="project web-development">
+                <h2>Project 1</h2>
+                <p>Description of project 1.</p>
             </div>
-
-            <div class="project">
-                <img src="https://via.placeholder.com/300x150" alt="Project 2">
-                <div class="project-content">
-                    <h3>Project 2</h3>
-                    <p>A short description of the project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+            <div class="project web-development">
+                <h2>Project 2</h2>
+                <p>Description of project 2.</p>
             </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/300x150" alt="Project 3">
-                <div class="project-content">
-                    <h3>Project 3</h3>
-                    <p>A short description of the project goes here.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+            <div class="project graphic-design">
+                <h2>Project 3</h2>
+                <p>Description of project 3.</p>
+            </div>
+            <div class="project graphic-design">
+                <h2>Project 4</h2>
+                <p>Description of project 4.</p>
+            </div>
+            <div class="project photography">
+                <h2>Project 5</h2>
+                <p>Description of project 5.</p>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out via email at <a href="mailto:yourname@example.com">yourname@example.com</a> or connect with me on <a href="#">LinkedIn</a>.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
