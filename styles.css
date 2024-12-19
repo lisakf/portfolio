@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#portfolio {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #333;
+}
